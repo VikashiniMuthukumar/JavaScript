@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Rock Paper Scissor</title>
+        <link rel="stylesheet" href="../CSS/RockPaperScissorGame.css">
+        <script src="../CSS/RockPaperScissorGame.js"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <div class="game-container">
+            <div class="item">
+                <div class="rock">
+                    <button id="rock_sign" onclick="playGame('Rock')"><img src="/images/rock.jpeg" alt=""></button>
+                </div>
+                <p class="name">Rock</p>
+            </div>
+            <div class="item">
+                <div class="paper">
+                    <button id="paper_sign" onclick="playGame('Paper')"><img src="/images/paper.jpeg" alt=""></button>
+                </div>
+                <p class="name">Paper</p>
+            </div>
+            <div class="item">
+                <div class="scissor">
+                    <button id="scissor_sign" onclick="playGame('Scissor')"><img src="/images/scissor.png" alt=""></button>
+                </div>
+                <p class="name">Scissor</p>
+            </div>
+        </div>
+
+        <div class="result">
+            <p id="human_chance">Human: </p>
+            <p id="computer_chance">Computer: </p>
+            <p id="result"></p>
+        </div>
+        
+        <div class="stats">
+            <p id="tie"></p>
+            <p id="win"></p>
+            <p id="lose"></p>
+        </div>
+
+        <script>
+           
+        </script>
+    </body>
+</html>

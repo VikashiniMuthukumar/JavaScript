@@ -1,0 +1,54 @@
+body {
+    margin: 20px;
+    text-align: center;
+}
+.game-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rock, .paper, .scissor {
+    width: 100px;
+    height: 100px;
+    border: solid;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+#rock_sign, #paper_sign, #scissor_sign {
+    border-radius: 50%;
+    border-style: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: white;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+}
+#scissor_sign img, #rock_sign img, #paper_sign img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.rock:hover, .scissor:hover, .paper:hover {
+    border-color: green;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.name {
+    margin-top: 10px;
+    font-size: large;
+}
+.result, .stats {
+    margin-top: 20px;
+}
+#tie, #win, #lose {
+    display: inline;
+    margin-right: 20px;
+}
